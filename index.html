@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <title>Jogo da Memória</title>
+</head>
+
+<body>
+    <nav>
+
+        <div>
+            <span>Jogo da memória</span>
+        </div>
+
+        <div id="box-times">
+            <span id="minutes" class="gameTime">00</span>:<span id="seconds" class="gameTime">00</span>
+        </div>
+
+        <div id="content-progress">
+            <span>Pontuação</span>
+            <progress max='100' value='0' id="progress"></progress>
+        </div>
+
+    </nav>
+
+    <section id="menu-float">
+        
+            <p>Parabéns!! você concluiu o jogo, deseja recomeçar?</p>
+            <div>
+                <button type="button" id="btn-reload" class="btn" name="reload">Recomeçar</button>
+                <button type="button" id="btn-cancel" class="btn" name="cancel">Cancelar</button>
+            </div>
+        
+    </section>
+
+    <section id="bg-main">
+        <div class="flip-card" data-maincard="01">
+            <div class="front-img">
+                <img src="./src/img/img-001.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="01">
+            <div class="front-img">
+                <img src="./src/img/img-001.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="02">
+            <div class="front-img">
+                <img src="./src/img/img-002.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="02">
+            <div class="front-img">
+                <img src="./src/img/img-002.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="03">
+            <div class="front-img">
+                <img src="./src/img/img-003.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="03">
+            <div class="front-img">
+                <img src="./src/img/img-003.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="04">
+            <div class="front-img">
+                <img src="./src/img/img-004.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="04">
+            <div class="front-img">
+                <img src="./src/img/img-004.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="05">
+            <div class="front-img">
+                <img src="./src/img/img-005.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="05">
+            <div class="front-img">
+                <img src="./src/img/img-005.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="06">
+            <div class="front-img">
+                <img src="./src/img/img-006.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="06">
+            <div class="front-img">
+                <img src="./src/img/img-006.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="07">
+            <div class="front-img">
+                <img src="./src/img/img-007.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="07">
+            <div class="front-img">
+                <img src="./src/img/img-007.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="08">
+            <div class="front-img">
+                <img src="./src/img/img-008.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="08">
+            <div class="front-img">
+                <img src="./src/img/img-008.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="09">
+            <div class="front-img">
+                <img src="./src/img/img-009.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="09">
+            <div class="front-img">
+                <img src="./src/img/img-009.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="10">
+            <div class="front-img">
+                <img src="./src/img/img-010.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="10">
+            <div class="front-img">
+                <img src="./src/img/img-010.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="11">
+            <div class="front-img">
+                <img src="./src/img/img-011.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="11">
+            <div class="front-img">
+                <img src="./src/img/img-011.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="12">
+            <div class="front-img">
+                <img src="./src/img/img-012.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="flip-card" data-maincard="12">
+            <div class="front-img">
+                <img src="./src/img/img-012.png" alt="Landscape">
+            </div>
+
+            <div class="back-img bg-back">
+                <img src="" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
